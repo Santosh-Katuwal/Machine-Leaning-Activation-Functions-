@@ -18,7 +18,7 @@ for i in x:
 #leaky relu
 fx_leakyrelu=[]
 for i in x:
-    fx=max(0,i)
+    fx=max(0.1*i,i)
     fx_leakyrelu.append(fx)
     
 #softmax
